@@ -1,0 +1,13 @@
+{
+  "name": "crew-health-monitoring-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "REST + SSE backend for the Crew Health Monitoring dashboard (zero runtime dependencies)",
+  "engines": { "node": ">=22.13.0" },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/server.js",
+    "dev": "node --watch --disable-warning=ExperimentalWarning src/server.js",
+    "test": "node --disable-warning=ExperimentalWarning --test test/*.test.js"
+  }
+}

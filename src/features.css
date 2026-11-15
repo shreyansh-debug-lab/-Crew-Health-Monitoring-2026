@@ -1,0 +1,33 @@
+/* Login, forms, modal, report, alert actions */
+.auth-wrap{min-height:100vh;display:grid;place-items:center;padding:24px}
+.auth-card{width:min(720px,100%);padding:26px;display:flex;flex-direction:column;gap:14px;background:var(--glass,rgba(14,22,42,.66));border:1px solid rgba(120,160,255,.2);border-radius:20px;backdrop-filter:blur(16px)}
+.auth-tabs{display:flex;gap:6px;padding:4px;border-radius:12px;background:rgba(255,255,255,.05)}
+.auth-tabs button{flex:1;padding:9px;border-radius:9px;color:#8493b3;font-weight:600}.auth-tabs .on{background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff}
+.profile-form{display:flex;flex-direction:column;gap:12px}.profile-form h4{font-size:11px;letter-spacing:.14em;color:#22d3ee;margin-top:6px}
+.form-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.form-grid.two{grid-template-columns:1fr 1fr}
+.field{display:flex;flex-direction:column;gap:5px;font-size:12px;color:#8493b3}
+.field input,.field select{padding:10px 12px;border-radius:10px;border:1px solid rgba(120,160,255,.2);background:rgba(5,10,24,.6);color:#e8eefc;font:inherit;outline:0}
+.field input:focus,.field select:focus{border-color:#60a5fa;box-shadow:0 0 0 3px rgba(96,165,250,.2)}
+.field input:disabled{opacity:.55}.field select option{background:#0b1226}
+.err{font-style:normal;color:#f87171;font-size:11px}.err.block{padding:9px 12px;border-radius:10px;background:rgba(248,113,113,.12);border:1px solid rgba(248,113,113,.35);font-size:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chips button{padding:6px 14px;border-radius:99px;border:1px solid rgba(120,160,255,.25);color:#8493b3;font-size:12px}.chips .on{background:rgba(96,165,250,.2);color:#fff;border-color:#60a5fa}
+.user-chip{display:inline-flex;align-items:center;gap:7px;padding:8px 14px;border-radius:99px;border:1px solid rgba(52,211,153,.4);background:rgba(52,211,153,.08);color:#34d399;font-weight:600}
+.alarm-actions{display:flex;gap:8px;flex:none}.alarm-actions a,.alarm-actions button{padding:7px 14px;border-radius:10px;background:rgba(255,255,255,.12);color:#fff;text-decoration:none;font-size:12px;font-weight:600}
+.level.alert{color:#f87171;background:rgba(248,113,113,.18)}
+.std-links{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:6px}.std-links a{color:#60a5fa;font-size:12px;font-weight:600;text-decoration:none}.std-links a:hover{text-decoration:underline}
+.profile-strip{padding:10px 14px;border-radius:12px;background:rgba(96,165,250,.1);border:1px solid rgba(96,165,250,.25);font-size:12px;color:#bcd4ff}
+.cert{display:flex;gap:12px;align-items:center;padding:12px;border-radius:14px;background:rgba(52,211,153,.12);border:1px solid rgba(52,211,153,.4);color:#34d399}.cert b{display:block}.cert span{font-size:12px;color:#e8eefc}
+.report-summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.report-summary>div{display:flex;flex-direction:column;padding:14px;border-radius:14px;background:rgba(5,10,24,.5);border:1px solid rgba(120,160,255,.15)}
+.report-summary small{font-size:10px;letter-spacing:.12em}.report-summary strong{font-size:24px}.report-summary span{font-size:12px;color:#8493b3}
+.tips{padding-left:20px;display:flex;flex-direction:column;gap:6px;color:#bcd4ff;font-size:13px}
+.report-actions{display:flex;gap:10px;flex-wrap:wrap}
+.modal-back{position:fixed;inset:0;z-index:50;background:rgba(2,4,12,.75);backdrop-filter:blur(6px);display:grid;place-items:center;padding:20px}
+.modal{width:min(720px,100%);max-height:92vh;overflow:auto;padding:20px;background:rgba(14,22,42,.95);border:1px solid rgba(120,160,255,.25);border-radius:20px}.modal.wide{width:min(900px,100%)}
+.modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;gap:10px}.modal-head>div{display:flex;gap:8px;align-items:center}
+.report-frame{width:100%;height:68vh;border:0;border-radius:12px;background:#fff}
+@media(max-width:700px){.form-grid,.form-grid.two{grid-template-columns:1fr 1fr}.alarm-banner{flex-wrap:wrap}}
+.profile-strip{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.strip-actions{display:flex;gap:6px}.strip-actions button{padding:4px 12px;border-radius:99px;border:1px solid rgba(96,165,250,.4);color:#bcd4ff;font-size:11px}.strip-actions button:hover{background:rgba(96,165,250,.2)}
+.auth-panel{display:flex;flex-direction:column;gap:14px}
+.link-btn{align-self:flex-start;color:#60a5fa;font-size:12px;padding:2px 0}.link-btn:hover{text-decoration:underline}
